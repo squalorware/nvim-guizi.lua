@@ -22,19 +22,19 @@ M.selectedText = palette.bright.white
 M.inactiveSelectionText = palette.bright.grey
 
 M.windowBorder = palette.yellow
-M.focusedBorder = palette.bright.orange
-M.emphasizedBorder = palette.orange
+M.focusedBorder = palette.bright.yellow
+M.emphasizedBorder = palette.yellow
 
 M.syntaxError = palette.bright.red
-M.syntaxFunction = palette.bright.orange
+M.syntaxFunction = palette.orange
 M.warningText = palette.grey.yellow
 M.syntaxKeyword = palette.bright.yellow
-M.linkText = palette.bright.cyan
+M.linkText = palette.bright.blue
 M.stringText = palette.bright.magenta
 M.warningEmphasis = palette.yellow
 M.successText = palette.green
 M.errorText = palette.red
-M.specialKeyword = palette.bright.orange
+M.specialKeyword = palette.bright.violet
 M.commentText = palette.green
 M.syntaxOperator = palette.bright.yellow
 M.foregroundEmphasis = palette.bright.black

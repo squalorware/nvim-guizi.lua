@@ -22,10 +22,18 @@ Plug 'squalorware/nvim-guizi.lua'
 ### [lazy](https://github.com/folke/lazy.nvim.git)
 ```lua
 return {
+    -- Other modules configuration...
     "squalorware/nvim-guizi.lua",
-    version = "*",
-    config = function ()
-        require("guizi").setup {}
-    end
+    opts = {
+        theme = "dark",
+        transparent = true,
+        italics = {
+            comments = true,
+            keywords = false,
+            functions = false,
+            strings = false,
+            variables = false,
+        },
+    }
 }
 ```
