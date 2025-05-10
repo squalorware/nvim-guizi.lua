@@ -320,10 +320,12 @@ local function set_groups()
     end
 end
 
-function M.setup(values)
+function M.setup(opts)
+    opts = opts or {}
+
     setmetatable(
         config,
-        { __index = vim.tbl_extend("force", config.defaults, values) }
+        { __index = vim.tbl_extend("force", config.defaults, opts) }
     )
 
     M.bufferline = { highlights = {} }
