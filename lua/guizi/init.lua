@@ -139,8 +139,13 @@ local function set_groups()
             fg = colorscheme.stringText,
             italic = config.italics.strings or false,
           },
-          Character = { fg = colorscheme.stringText },
-          Number = { fg = colorscheme.linkText, bold = true },
+          Character = {
+            fg = utils.shade(colorscheme.stringText, 0.50),
+          },
+          Number = {
+            fg = utils.shade(colorscheme.linkText, 0.50),
+            bold = true,
+          },
           Boolean = { fg = colorscheme.syntaxError },
           Float = { link = 'Number' },
 
