@@ -260,7 +260,7 @@ local function set_groups()
           ['@operator'] = { link = 'Operator' },
           ['@exception'] = { link = 'Exception' },
           ['@variable'] = {
-            fg = utils.shade(colorscheme.specialKeyword, 50),
+            fg = utils.shade(colorscheme.specialKeyword, 0.50),
             italic = config.italics.variables or false,
           },
           ['@variable.builtin'] = { fg = colorscheme.syntaxFunction },
