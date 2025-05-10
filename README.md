@@ -24,7 +24,7 @@ Plug 'squalorware/nvim-guizi.lua'
 return {
     -- Other modules configuration...
     "squalorware/nvim-guizi.lua",
-    opts = {
+    require("guizi").setup({
         theme = "dark",
         transparent = true,
         italics = {
@@ -34,6 +34,12 @@ return {
             strings = false,
             variables = false,
         },
-    }
+    })
 }
+```
+
+Then, in your main configuration file (i.e. `$CONFIG_HOME/init.lua`) simply add
+```lua
+local theme = require("guizi")
+theme.colorscheme()
 ```
