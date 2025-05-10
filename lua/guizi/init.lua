@@ -152,7 +152,9 @@ local function set_groups()
           Identifier = { fg = colorscheme.mainText },
           Function = { fg = colorscheme.syntaxFunction },
           Method = { fg = colorscheme.syntaxFunction },
-          Property = { fg = colorscheme.specialKeyword },
+          Property = {
+            fg = utils.shade(colorscheme.specialKeyword, 50)
+          },
           Field = { link = 'Property' },
           Parameter = { fg = colorscheme.mainText },
           Statement = { fg = colorscheme.syntaxKeyword },
@@ -258,7 +260,7 @@ local function set_groups()
           ['@operator'] = { link = 'Operator' },
           ['@exception'] = { link = 'Exception' },
           ['@variable'] = {
-            fg = colorscheme.specialKeyword,
+            fg = utils.shade(colorscheme.specialKeyword, 50),
             italic = config.italics.variables or false,
           },
           ['@variable.builtin'] = { fg = colorscheme.syntaxFunction },
