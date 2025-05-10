@@ -17,7 +17,7 @@ M.emphasisText = palette.black
 M.commandText = palette.bright.white
 M.inactiveText = palette.bright.grey
 M.disabledText = palette.grey
-M.lineNumberText = palette.bright.orange
+M.lineNumberText = palette.bright.yellow
 M.selectedText = palette.bright.white
 M.inactiveSelectionText = palette.bright.grey
 
